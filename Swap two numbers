@@ -1,0 +1,23 @@
+import java.util.*;
+public class Swap_two_numbers{
+    public static void main(String args[]){
+
+        
+        System.out.println("Enter first number A: ");
+        Scanner in = new Scanner(System.in);
+         int a = in.nextInt();
+        System.out.println("Enter another number B: ");
+        int b = in.nextInt();
+
+        // Creating a temporary variable to store the value of a.
+
+        int temp = a; // storing the value of a in temp variable
+
+        a = b; // assigning the value of b to a
+
+        b = temp; // assigning the value of temp(a initially) to b. 
+
+        System.out.println("A = "+a+ " B = " +b);
+
+    }
+}
