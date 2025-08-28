@@ -1,0 +1,23 @@
+import java.util.*;
+public class FindOccurence{
+    public static void main(String args[]){
+        Scanner obj = new Scanner(System.in);
+
+        System.out.println("Enter the number you want to find occurence of: ");
+        int a = obj.nextInt();
+
+        System.out.println("Enter a number you want to find occurance in: ");
+        long num = obj.nextInt();
+
+        int count = 0 ; // initalising a variable count to store the value of occurence. 
+        while(num > 0){
+            long rem = num % 10;
+            if(rem == a){
+                count++;
+            }
+            num = num / 10;
+        }
+        System.out.println(count);
+
+    }
+}
